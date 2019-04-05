@@ -20,7 +20,8 @@ class CashRegister
     # end
     
     while quantity > 0 
-      @items << title 
+      @items << title
+      @last_trans += price 
       quantity -= 1
     end 
     
