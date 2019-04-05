@@ -22,11 +22,8 @@ class CashRegister
     
     while quantity > 0 
       @items << title
-      # @last_trans += price 
       quantity -= 1
     end 
-    @last_trans = obj.price * quantity
-    
   end 
   
   def apply_discount 
@@ -45,7 +42,6 @@ class CashRegister
     # @last_trans = price * quantity
     @last_trans = 
      @total -= @last_trans
-     @last_trans = 0
     
     # @total -= @last_trans
     #@total = 0
