@@ -25,6 +25,7 @@ class CashRegister
       # @last_trans += price 
       quantity -= 1
     end 
+    @last_trans = obj.price * quantity
     
   end 
   
@@ -44,6 +45,7 @@ class CashRegister
     # @last_trans = price * quantity
     @last_trans = 
      @total -= @last_trans
+     @last_trans = 0
     
     # @total -= @last_trans
     #@total = 0
