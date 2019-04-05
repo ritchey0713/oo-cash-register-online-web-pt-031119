@@ -42,7 +42,8 @@ class CashRegister
     # @last_trans = price * quantity
     # @total -= @last_trans
     
-    @total -= @last_trans
+    # @total -= @last_trans
+    @total = 0
   end 
 
 end 
