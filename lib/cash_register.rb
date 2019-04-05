@@ -16,8 +16,10 @@ class CashRegister
     # quantity.times do 
     #   @items << title 
     # end 
-    
-    while 
+    while quantity > 0 
+      @items << title 
+      quantity -= 1
+    end 
   end 
   
   def apply_discount 
